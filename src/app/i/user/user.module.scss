@@ -1,0 +1,50 @@
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	width: 70%;
+	color: rgb(199, 199, 199);
+
+	table {
+		margin-bottom: 40px;
+		border-radius: 10px;
+
+		thead {
+			border-bottom: 1px solid grey;
+			tr {
+				&:hover {
+					background-color: inherit;
+				}
+			}
+		}
+
+		tr {
+			text-align: center;
+
+			&:hover {
+				background-color: rgb(73, 73, 73);
+				transition: 0.7s;
+			}
+		}
+		.active {
+			background-color: grey;
+		}
+		th,
+		td {
+			border-right: 1px solid rgb(150, 150, 150);
+			padding: 4px;
+
+			&:first-child {
+				border-top-left-radius: 10px;
+				border-bottom-left-radius: 10px;
+			}
+			&:last-child {
+				height: max-content;
+				// background-color: #0e0f0f;
+				justify-content: center;
+				border-top-right-radius: 10px;
+				border-bottom-right-radius: 10px;
+				border-right: none;
+			}
+		}
+	}
+}

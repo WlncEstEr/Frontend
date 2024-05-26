@@ -1,0 +1,37 @@
+.custom-select {
+	color: black;
+
+	&__control {
+		background-color: transparent !important;
+		border: 1px solid rgba(255, 255, 255, 0.12) !important;
+		border-radius: 8px !important;
+		padding: 3px !important;
+		// border-bottom: 1px solid #66676e !important;
+		box-shadow: none !important;
+	}
+
+	&__single-value {
+		background-color: inherit !important;
+		border-radius: 0.5 rem !important;
+		color: #b1b1b1 !important;
+	}
+	&__menu {
+		background-color: #0e0f0f !important;
+		font-size: 15px !important;
+		color: #c2c2c2;
+	}
+	&__option {
+		cursor: pointer !important;
+		&--is-focused {
+			background-color: lighten(#292929, 8%) !important;
+		}
+	}
+
+	&__indicator-separator {
+		display: none !important;
+	}
+
+	&__indicators {
+		cursor: pointer !important;
+	}
+}
